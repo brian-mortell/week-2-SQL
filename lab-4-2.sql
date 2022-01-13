@@ -25,3 +25,6 @@
 -- | Ian        | Happ      |
 
 
+SELECT players.first_name, players.last_name FROM players INNER JOIN stats on players.id = stats.player_id WHERE teams.name = "Chicago Cubs" and teams.year = 2020;
+
+How to add a third inner join where teams gets layered in?
