@@ -1,0 +1,1 @@
+INSERT INTO students (first_name, last_name, email) VALUES ("Brian2", "Mortell2", "yetanotheremail@test.com");
