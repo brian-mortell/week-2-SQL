@@ -7,4 +7,4 @@
 -- +---------------+------------+-----------+-----------+
 
 
-SELECT teams.name, players.first_name, players.last_name, MAX(stats.home_runs) FROM INNER JOIN WHERE teams.year = 2019;
+SELECT teams.name, players.first_name, players.last_name, MAX(stats.home_runs) FROM stats INNER JOIN teams ON teams.id = stats.team_id INNER JOIN players ON players.id = stats.player_id WHERE teams.year = 2019;
